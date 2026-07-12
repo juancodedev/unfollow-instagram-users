@@ -44,6 +44,7 @@ python build.py
 | Secret | Descripción |
 |---|---|
 | `DATABASE_URL` | Connection string de Neon (PostgreSQL) |
+| `SESSION_PASSWORD` | Contraseña para acceder al sitio |
 
 ## Estructura
 
