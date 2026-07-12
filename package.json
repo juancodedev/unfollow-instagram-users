@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "drizzle-kit": "^0.24.0",
-    "wrangler": "^3.0.0"
+    "wrangler": "^4.110.0"
   },
   "scripts": {
     "generate": "drizzle-kit generate",
