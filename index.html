@@ -784,7 +784,7 @@ body {
   <!-- Filters -->
   <div class="sidebar-section">
     <div class="sidebar-label">Filtro</div>
-    <button class="filter-pill active" id="fp-all"      onclick="setFilter('all')">
+    <button class="filter-pill" id="fp-all"      onclick="setFilter('all')">
       <span class="pill-left"><span class="dot" style="background:var(--muted2)"></span>Todos</span>
       <span class="pill-count" id="fc-all">0</span>
     </button>
@@ -970,7 +970,7 @@ const TOTAL = ACCOUNTS.length;
 // ─── STATE ─────────────────────────────────────────────────────
 let states      = {};  // username -> 'keep'|'unfollow'|'deleted'|'private'
 let currentPage = 1;
-let filter      = 'all';
+let filter      = 'pending';
 let search      = '';
 let yearFilter  = 'all';
 let sessionMode = false;
@@ -1460,8 +1460,7 @@ document.addEventListener('click', function(e) {
 // ─── INIT ──────────────────────────────────────────────────────
 load();
 buildYearChips();
-updateStats();
-render();
+setFilter('pending');
 </script>
 </body>
 </html>
